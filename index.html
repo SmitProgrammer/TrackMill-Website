@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TrackMill - Advanced CNC ERP System for manufacturing excellence">
+    <title>TrackMill - CNC ERP System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .logo {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .btn {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">TrackMill</div>
+        <div class="subtitle">CNC ERP System</div>
+        <div class="description">
+            Advanced manufacturing solution for efficient CNC operations management. 
+            Streamline your production workflow with our comprehensive ERP system.
+        </div>
+        
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="downloadSoftware()">
+                <span class="icon">💻</span>
+                Download Software (Admin App)
+            </button>
+            
+            <button class="btn btn-secondary" onclick="downloadAPK()">
+                <span class="icon">📱</span>
+                Download APK
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function downloadSoftware() {
+            // Placeholder function - replace with actual download link
+            alert('Download Software (Admin App)\n\nPlease contact administrator for the download link.');
+            // window.location.href = 'path/to/admin-app-installer.exe';
+        }
+
+        function downloadAPK() {
+            // Placeholder function - replace with actual download link
+            alert('Download APK\n\nPlease contact administrator for the download link.');
+            // window.location.href = 'path/to/trackmill.apk';
+        }
+    </script>
+</body>
+</html>
